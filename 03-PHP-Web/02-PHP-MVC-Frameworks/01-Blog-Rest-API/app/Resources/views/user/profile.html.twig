@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div class="container body-content span=8 offset=2">
+        <div class="well">
+            <fieldset>
+                <h2 style="text-align: center">Welcome, {{ user.fullName }}!</h2>
+                <h2 style="text-align: center">With email: {{ user.email }}</h2>
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-5">
+                        <a class="btn btn-default" href="{{ path('blog_index') }}">Home</a>
+                        <a class="btn btn-success" href="{{ path('profile_edit') }}">Edit Profile</a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+{% endblock %}
+
+
