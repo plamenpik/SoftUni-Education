@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Ubuntu', sans-serif;
+}
+
+.site-main {
+    width: 75%;
+    margin: 5em auto;
+    background: linear-gradient(0deg,rgba(30,76,146,0.8),rgba(30,76,146,0.8)), url('./images/image.jpg') no-repeat center center;
+    background-size: 100% auto;
+}
+
+header {
+    text-align: right;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.close:after {
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00d';
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 0.5em 2em 0;
+}
+
+
+.site-content ul{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+.site-content li {
+    list-style: none outside;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.icon:before {
+    display: block;
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #EC8421;
+    padding-bottom: 0.5em;
+}
+
+.icon-employee:before {
+    content: '\f0c0';
+}
+
+.icon-distance:before {
+    content: '\f072';
+}
+
+.icon-clients:before {
+    content: '\f0d1';
+}
+
+.icon-shipments:before {
+    content: '\f21a';
+}
+
+.icon p {
+    font-weight: bold;
+    font-size: 1.4em;
+}

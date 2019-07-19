@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.container {
+    background: rgb(238, 238, 238);
+    padding: 2rem 10rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.card h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.card p {
+    padding: 0 1rem;
+    flex: 1 1 100%;
+}
+
+.card footer {
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+    flex:0 0 10%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.masonry {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 350vh;
+}
+
+.masonry:after {
+    display: block;
+    content: '';
+    flex: 0 0 30%;
+    margin-bottom: 1rem;
+}
+
+
+.masonry h2 {
+    margin-bottom: 2rem;
+}
+
+.masonry .card {
+    flex: 0 0 20%;
+    margin-bottom: 1rem;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.flex:after {
+    display: block;
+    content: '';
+    flex: 0 0 30%;
+    margin-bottom: 1rem;
+}
+
+
+.flex h2 {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+}
+
+.flex .card {
+    flex: 0 0 30%;
+    margin-bottom: 1rem;
+}

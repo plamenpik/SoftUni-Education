@@ -1,0 +1,44 @@
+*, *:before, *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238, 238, 238);
+    display: flex;
+}
+
+.gallery{
+    flex: 0 0 80%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.gallery ul{
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery ul li{
+    list-style: none outside;
+    border: 5px solid black;
+    flex: 0 0 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: rgb(255, 255, 255);
+}
+
+.gallery ul li img{
+    padding: 1rem;
+    max-width: 100%;
+    height: auto;
+}

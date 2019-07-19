@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238, 238, 238);
+}
+
+h1, h2{
+    margin-bottom: 1rem;
+}
+
+.cleaner:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.page{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header{
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+    flex: 1 1 100%;
+}
+
+header h1{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+main{
+    flex: 0 0 70%;
+}
+
+main section p{
+    margin-bottom: 1rem;
+}
+
+main section .left{
+    float: left;
+    margin-right: 1rem; 
+}
+
+main section .right{
+    float: right;
+    margin-left: 1rem;
+}
+
+main img{
+    border: 2px solid black;
+    padding: 0.5rem;
+    background: rgb(255, 255, 255);
+}
+
+main section blockquote{
+    width: 50%;
+    font-family: Georgia, serif;
+    border-left: 1px solid grey;
+    padding-left: 1rem;
+}
+
+main section blockquote p{
+    color: grey;
+    font-style: italic;
+}
+
+aside{
+    flex: 0 0 25%;
+}
+
+aside h1{
+    margin-bottom: 0.1rem;
+}
+
+aside ul{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+aside ul li{
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}

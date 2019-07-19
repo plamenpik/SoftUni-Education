@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <label for="FirstName">
+                First Name <input type="text" id="FirstName" placeholder="George" autofocus><br><br>
+            </label>
+            <label for="LastName">
+                Last Name <input type="text" id="LastName" placeholder="Devis"><br><br>
+            </label>
+            <label>
+                Male <input type="radio">
+                Female <input type="radio">
+                Other <input type="radio"><br><br>
+            </label>
+            Preferred contact method: 
+            <label>
+                Email <input type="radio">
+                Phone <input type="radio"><br><br>
+            </label>
+            <label for="Email">
+                Email <input type="email" id="Email" placeholder="your@email.com"><br><br>
+            </label>
+            <label for="Phone">
+                Phone <input type="text" id="Phone" placeholder="+359885236225"><br><br>
+            </label>
+            Town
+            <select>
+                <option value="Varna" selected>Varna</option>
+                <option value="Plovdiv">Plovdiv</option>
+                <option value="Burgas">Burgas</option>
+                <option value="Sofia">Sofia</option>
+                <option value="Pleven">Pleven</option>
+            </select><br><br>
+            <label for="Age">
+                Age <input type="number" min="18" max="70" id="Age"><br><br>
+            </label>
+            Programming language <input list="browsers">
+            <datalist id="browsers">
+                <option value="Java">
+                <option value="PHP">
+                <option value="C#">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Ruby">
+                <option value="Other">
+            </datalist><br><br>
+            <label for="TextArea">
+                <textarea id="TextArea" cols="20" rows="5" placeholder="More information..."></textarea><br><br>
+            </label>
+            <label for="TOS">
+                <input type="checkbox" value="checked" id="TOS"> I agree the Terms and Conditions<br><br>
+            </label>
+            <label for="Send">
+                <input type="submit" value="Send" id="Send">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

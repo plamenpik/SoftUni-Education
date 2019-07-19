@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 1.2
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: rgb(173, 216, 230);
+    padding: 1.5rem;
+    height: auto;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset p{
+    flex: 1 1 100%;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+fieldset p.gender input{
+    flex: 0 0 10%;
+}
+
+fieldset p label{
+    flex: 0 1 30%;
+}
+
+fieldset p input,
+select,
+textarea{
+    flex: 0 1 70%;
+    padding: 0.5rem;
+}
+
+fieldset p.message{
+    align-items: flex-start;
+}
+
+fieldset p.agreements{
+    justify-content: flex-start;
+}
+
+
+fieldset p.agreements label{
+    flex: 0 0 80%;
+}
+
+fieldset p.agreements input[type='checkbox']{
+    flex: 0 0 5%;
+}
+
+
+
+fieldset input[type='submit']{
+    flex: 1 1 100%;
+    padding: 0.8rem;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgb(35, 68, 101);
+    border: 1px solid rgb(35, 68, 101);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

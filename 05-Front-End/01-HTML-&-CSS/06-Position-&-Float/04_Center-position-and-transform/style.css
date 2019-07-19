@@ -1,0 +1,62 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    background: rgb(238, 238, 238);
+    padding: 40rem 40rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+img{
+    border-radius: 5px;
+    position: absolute;
+    top: -150%;
+    right: 0%;
+    max-width: 487px;
+    height: auto;
+    z-index: -1;
+}
+
+.content{
+    width: 487px;
+    padding: 1rem;
+}
+
+.content:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.content button{
+    background: rgb(0, 153, 0);
+    float: right;
+    border-radius: 5px;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+}
+
+.content button:hover{
+    cursor: pointer;
+}

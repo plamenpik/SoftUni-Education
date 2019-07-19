@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none outside;
+}
+
+.site-header {
+    background: url('./image/image.jpg') no-repeat center center;
+   background-size: 100% auto; 
+   width: 100%;
+   height: 130vh;
+   position: relative;
+}
+
+.site-title {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    width: 11em;
+    height: 9em;
+    border: 1px solid #959393;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    padding: 1em 0 1em 1em;
+}
+
+.site-title h2:after {
+    display: block;
+    content: '';
+    border: 1px solid #ffffff;
+    width: 60%;
+    margin: 0.3em 0;
+}
+
+.site-description {
+    background: linear-gradient(to right, #9c928a, #a79f99, #b3aca8, #beb9b7, #c9c7c6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    width: 20em;
+    height: auto;
+    border: 1px solid #959393;
+    font-size: 0.8em;
+    position: absolute;
+    top: 24%;
+    left: 68%;
+    padding: 1em;
+    text-align: right;
+}
+
+.site-description:before {
+    display: block;
+    content: '\f04c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #8D8581;
+    text-align: right;
+    padding: 1em 0.3em 0.5em 0;
+}
+
+.site-main {
+    display: flex;
+    position: relative;
+}
+
+.site-main main {
+    background: #F2F0F3;
+    width: 70%;
+    padding: 3em 4em 1em;
+}
+
+.site-main main li {
+    padding: 1em 0;
+}
+
+.site-main main li span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.site-main main h2 {
+    text-transform: uppercase;
+}
+
+.services {
+    margin-bottom: 3em;
+}
+
+.services li span:before {
+    display: inline-block;
+    content: '\f0a9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    color: #494849;
+    padding-right: 0.5em;
+}
+
+.contacts li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.contacts:before {
+    display: block;
+    content: '';
+    border: 1px solid #808080;
+    width: 70%;
+    position: absolute;
+    left: 0;
+}
+
+.contacts li span {
+    font-style: italic;
+}
+
+.site-main form input[type="text"] {
+    background: #BAB1AD;
+    padding: 0.7em;
+    width: 50%;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.site-main form input[type="text"]::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.site-main form input[type="submit"] {
+    background: #67784D;
+    padding: 0.7em;
+    border: none;
+    border-radius: 0.3em;
+    color: #ffffff;
+    margin-left: 0.5em;
+}
+
+.site-main aside {
+    background: #BAB1AD;
+    width: 30%;
+    padding: 1.5em;
+}
+
+.units {
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1;
+}
+
+.info {
+    text-transform: uppercase;
+    margin-bottom: 7em;
+}
+
+.info.last {
+    margin-bottom: 0;
+}

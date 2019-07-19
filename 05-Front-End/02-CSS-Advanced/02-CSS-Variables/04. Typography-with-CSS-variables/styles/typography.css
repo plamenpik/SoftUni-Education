@@ -1,0 +1,49 @@
+html {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+h1 { 
+    font-size: 2.2em; 
+}
+
+h2 { 
+    font-size: 1.8em; 
+    margin-top: 0.5em;
+}
+
+p {
+    padding: 1em 0;
+}
+
+ul {
+    padding-left: 3em;
+}
+
+li {
+    padding-left: 1em;
+}
+
+article {
+    max-width: 80%;
+    margin: 2em auto;
+}
+
+@media screen and (min-width: 500px) {
+    article {
+        font-size: var(--font-size-min-500px);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    article {
+        font-size: var(--font-size-min-700px);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    article {
+        font-size: var(--font-size-min-1600px);
+    }
+}

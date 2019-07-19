@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.viewport{
+    height: 100vw;
+    position: relative;
+}
+
+.viewport:first-child{
+    background: linear-gradient(to right, rgb(24, 90, 157) , rgb(66, 205, 162));
+}
+
+.viewport:last-child{
+    background: linear-gradient(to right, rgb(168, 50, 120) , rgb(210, 130, 18));
+}
+
+.card{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    background: white;
+    border-radius: 7px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+i{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
