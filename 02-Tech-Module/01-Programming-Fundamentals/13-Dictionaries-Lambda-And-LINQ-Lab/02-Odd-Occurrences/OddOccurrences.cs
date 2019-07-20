@@ -1,13 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-class CountRealNumbers
+class OddOccurrences
 {
     static void Main()
     {
-        var numbers = new SortedDictionary<double, int>();
-        var input = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
+        var helper = new List<string>();
+        var numbers = new Dictionary<string, int>();
+
+        var input = Console.ReadLine().ToLower().Split(' ').ToList();
 
         for (int i = 0; i < input.Count; i++)
         {
@@ -20,10 +22,11 @@ class CountRealNumbers
                 numbers[input[i]]++;
             }
         }
-        
-        foreach (var kvp in numbers)
+
+        foreach (var kvp in numbers.Where(x => x.Value %2 == 1))
         {
-            Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+            helper.Add(kvp.Key);
         }
+        Console.WriteLine(string.Join(", ", helper));
     }
 }
