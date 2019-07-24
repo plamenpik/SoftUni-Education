@@ -1,17 +1,30 @@
+*, *:before, *:after {
+      box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 'Verdana', serif; 
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(238, 238, 238);
     color: rgb(51, 51, 51);
-    margin: auto;
+    width: 100%;
+    margin: 2em;
 }
 
 article {
     display: inline-block;
+    width: 68%
 }
 
-article {
+aside {
     display: inline-block;
+    width: 28%;
+    vertical-align: top
 }
 
 img {
-    width: 60%;
+    width: 75%;
 }
