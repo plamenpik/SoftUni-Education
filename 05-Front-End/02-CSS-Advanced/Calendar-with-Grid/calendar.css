@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 2em;
+}
+
+header > p:after {
+    display: inline-block;
+    content: '\f58c';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    color: #00A4EF;
+}
+
+.site-calendar {
+    max-width: 60%;
+    margin: 1.5em auto;
+    font-weight: 600;
+}
+
+.day-name {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.name {
+    border: 1px solid purple;
+    text-align: center;
+    background-color: lightgray;
+    position: relative;
+    height: 1.5em;
+}
+
+.name:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.name:nth-child(1):after {
+    content: 'Monday';
+}
+
+div.name:nth-child(2):after {
+    content: 'Tuesday';
+}
+
+div.name:nth-child(3):after {
+    content: 'Wednesday';
+}
+
+div.name:nth-child(4):after {
+    content: 'Thursday';
+}
+
+div.name:nth-child(5):after {
+    content: 'Friday';
+}
+
+div.name:nth-child(6):after {
+    content: 'Saturday';
+}
+
+div.name:nth-child(7):after {
+    content: 'Sunday';
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.5em;
+}
+
+.day {
+    border: 1px solid purple;
+    background: #FFFFFF;
+    color: darkblue;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.weekend {
+    background-color: #FF0000;
+}
+
+.empty {
+    position: relative;
+}
+
+.empty:after {
+    display: block;
+    content: '1';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(207, 207, 207);
+}
+
+div.day:nth-child(32):after {
+    content: '28';
+}
+
+div.day:nth-child(33):after {
+    content: '29';
+}
+
+div.day:nth-child(34):after {
+    content: '30';
+}
+
+div.day:nth-child(35):after {
+    content: '1';
+}
+
+div.day:nth-child(32),
+div.day:nth-child(33),
+div.day:nth-child(34) {
+    grid-row: 1 / span 1;
+}
+
+@media (max-width: 1200px) {
+    .site-calendar {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .site-calendar {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .site-calendar {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    div.name:nth-child(1):after {
+        content: 'Mon';
+    }
+
+    div.name:nth-child(2):after {
+        content: 'Tue';
+    }
+
+    div.name:nth-child(3):after {
+        content: 'Wed';
+    }
+
+    div.name:nth-child(4):after {
+        content: 'Thu';
+    }
+
+    div.name:nth-child(5):after {
+        content: 'Fri';
+    }
+
+    div.name:nth-child(6):after {
+        content: 'Sat';
+    }
+
+    div.name:nth-child(7):after {
+        content: 'Sun';
+    }
+}
+
+@media (max-width: 700px) {
+    .day {
+        padding: 1.5em 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .day {
+        padding: 1em 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .day {
+        padding: 0.7em 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .day {
+        padding: 0.5em 0;
+    }
+}
