@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.chessboard {
+    width: 35%;
+    margin: 5em auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5em;
+}
+
+.chessboard div {
+    width: 5em;
+    height: 5em;
+    border-radius: 0.5em; 
+}
+
+.chessboard div:nth-child(odd) {
+    border: 1px solid #000000; 
+
+}
+
+.chessboard div:nth-child(even) {
+    background: #000000;
+}
