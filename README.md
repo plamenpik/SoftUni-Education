@@ -122,3 +122,4 @@ See the content list down below.
 02. [CSS-Variables](https://github.com/plamenpik/SoftUni-Education/tree/master/05-Front-End/02-CSS-Advanced/02-CSS-Variables)
 03. [CSS-Transitions-and-Animations](https://github.com/plamenpik/SoftUni-Education/tree/master/05-Front-End/02-CSS-Advanced/03-CSS-Transitions-and-Animations)
 04. [CSS-Grid-Introduction](https://github.com/plamenpik/SoftUni-Education/tree/master/05-Front-End/02-CSS-Advanced/04-CSS-Grid-Introduction)
+05. [CSS-Grid-Drive-In](https://github.com/plamenpik/SoftUni-Education/tree/master/05-Front-End/02-CSS-Advanced/05-CSS-Grid-Dive-In)
