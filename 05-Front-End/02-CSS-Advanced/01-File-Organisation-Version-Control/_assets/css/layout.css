@@ -1,0 +1,49 @@
+.site {
+    max-width: 80%;
+    margin: 0 auto;
+    background: #E4E4E4;
+}
+
+.site-header {
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.site-content {
+    display: flex;
+}
+
+.site-main {
+    padding: 2em;
+    width: 70%
+}
+
+@media (max-width: 840px) {
+    .site {
+        max-width: 100%;
+    }
+
+    .site-content {
+        display: block;
+    }
+}
+
+@media (max-width: 670px) {
+        .site-main {
+        width: 100%
+    }
+
+    .sidebar {
+        width: 100%;
+        border-left: none; 
+    }
+
+    .posts {
+        display: block;
+        text-align: center;
+    }
+
+    .posts li {
+        padding: 0.5em 0;
+    }
+}

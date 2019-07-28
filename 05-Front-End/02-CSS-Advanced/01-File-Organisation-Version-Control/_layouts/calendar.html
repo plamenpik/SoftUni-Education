@@ -10,8 +10,11 @@
         {% else %}
         {{site.title}}
         {% endif %}
-    </title>    
+    </title>
     <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{site.baseurl}}/scripts/calendar.js"></script>
     <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/favicon.png">
 </head>
 <body>
@@ -21,19 +24,10 @@
                 <h1>{{site.title}}</h1>
             </a>
         </header>
-
-        <section class="site-content">
-            <main class="site-main">
-                {{content}}
-            </main>
-
-            <aside class="sidebar">
-                {% include sidebar.html %}
-            </aside>
-        </section>
+        {{ content }}
         <footer class="site-footer">
             {% include footer.html %}        
         </footer>
-    </div>  
+    </div>
 </body>
 </html>

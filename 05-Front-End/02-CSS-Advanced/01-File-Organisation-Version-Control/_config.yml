@@ -17,15 +17,15 @@ title: Version Control Homework
 email: my-email@example.com
 description: Jekyll generated web-site for CSS Advanced Homework!
 destination: docs
-baseurl: "/Version-control-homework" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  plamenpik
 
 # Build settings
 future: true
 markdown: kramdown
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +39,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - docs
+  - gulpfile.js
+  - package.json
+  - package-lock.json

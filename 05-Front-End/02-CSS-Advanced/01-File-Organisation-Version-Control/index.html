@@ -4,11 +4,15 @@
 
 layout: main
 ---
-
+<section>
 <ul class="posts">
-        {% for post in site.posts %}
-          <li>
-            <a href="{{site.baseurl}}/{{post.url}}">{{post.title}}</a>
-          </li>
-        {% endfor %}
+    {% assign req = site.posts | sort:"order" %}
+    {% for post in req %}
+      <li>
+        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+      </li>
+    {% endfor %}
 </ul>
+</section>
+
+{% include article.html %}

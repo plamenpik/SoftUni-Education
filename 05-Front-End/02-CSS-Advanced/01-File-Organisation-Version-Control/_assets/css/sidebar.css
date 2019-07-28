@@ -1,0 +1,12 @@
+.sidebar {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-left: 1px solid #414339;
+}
+
+.sidebar li {
+    list-style: square;
+}
