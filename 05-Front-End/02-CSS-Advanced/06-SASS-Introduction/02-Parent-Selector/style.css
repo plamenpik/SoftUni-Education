@@ -1,0 +1,57 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 1.5em;
+}
+
+.site {
+    width: 80%;
+    margin: 0.3em auto;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+}
+
+.site-header {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.site-header h1 {
+    padding-bottom: 0;
+}
+
+.site-header p {
+    font-style: italic;
+}
+
+.site-main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-main p {
+    padding-bottom: 1em;
+}
+
+.site-main p:nth-child(odd) {
+    text-indent: 2em;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.site-footer p {
+    padding-top: 1em;
+    font-style: italic;
+}
